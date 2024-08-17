@@ -1,0 +1,21 @@
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+}
+
+ul {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+}
+
+ul a {
+	font-size: 1.75rem;
+	text-decoration: none;
+}
+
+ul a:hover {
+	text-decoration: underline;
+}
