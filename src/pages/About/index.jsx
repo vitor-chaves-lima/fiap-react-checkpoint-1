@@ -2,8 +2,8 @@ import Hero from "../../components/Hero";
 import AboutHeroImage1 from "../../assets/images/about_hero_image_1.png";
 import AboutHeroImage2 from "../../assets/images/about_hero_image_2.png";
 import Container from "../../components/Container";
-import "./styles.css";
 import PlanCard from "../../components/PlanCard";
+import "./styles.css";
 
 /* =================== SubComponents =================== */
 
@@ -12,7 +12,7 @@ function PlansSection() {
 		<section className="plans-section">
 			<h3>Planos</h3>
 			<div className="plans">
-				<PlanCard title="Básico" buttonText="Contratar">
+				<PlanCard title="Individual" buttonText="Cadastrar">
 					Hello World
 				</PlanCard>
 			</div>
