@@ -30,4 +30,6 @@ function Card({ number, backgroundColor, title, description, iconSource }) {
 
 Card.propTypes = CardPropType;
 
+/* ====================== Exports ====================== */
+
 export default Card;

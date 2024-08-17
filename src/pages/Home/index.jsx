@@ -4,28 +4,10 @@ import TikTokIcon from "../../assets/images/tiktok_icon.jpg";
 import FacebookIcon from "../../assets/images/facebook_icon.jpg";
 import InstagramIcon from "../../assets/images/instagram_icon.jpg";
 import Card from "../../components/Card";
+import Hero from "../../components/Hero";
 import "./styles.css";
 
 /* =================== SubComponents =================== */
-
-function HeroSection() {
-	return (
-		<section className="hero-section">
-			<div className="headline">
-				<h1>Crie seus vídeos online</h1>
-				<p>
-					Transforme suas ideias em filmes memoráveis: onde a
-					criatividade encontra a simplicidade.
-				</p>
-				<button className="call-to-action">Comecar Agora!</button>
-			</div>
-
-			<div>
-				<img className="hero" src={HeroImage} />
-			</div>
-		</section>
-	);
-}
 
 function CardSection() {
 	const cardsContent = [
@@ -77,12 +59,22 @@ function CardSection() {
 /* =================== Main Component ================== */
 
 function HomePage() {
+	const heroContent = {
+		headline: "Crie conteúdo incrível e faça sucesso nas redes sociais",
+		description:
+			"Descubra como produzir vídeos incríveis e cativantes para engajar sua audiência nas principais redes sociais do mundo.",
+		callToAction: "Comece Agora !",
+		heroImageSource: HeroImage,
+	};
+
 	return (
 		<>
-			<HeroSection />
+			<Hero {...heroContent} />
 			<CardSection />
 		</>
 	);
 }
+
+/* ====================== Exports ====================== */
 
 export default HomePage;
