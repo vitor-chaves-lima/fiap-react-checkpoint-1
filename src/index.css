@@ -12,6 +12,7 @@
 	color: #333333;
 }
 
-body {
+body,
+button {
 	font-family: "RobotoMono", sans-serif;
 }
