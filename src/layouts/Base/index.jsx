@@ -1,6 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../../components/Navbar";
-import "./styles.css";
 
 /* =================== Main Component ================== */
 
@@ -26,12 +25,12 @@ function BaseLayout() {
 	];
 
 	return (
-		<div className="container">
+		<>
 			<Navbar items={navbarItems} />
 			<main>
 				<Outlet />
 			</main>
-		</div>
+		</>
 	);
 }
 

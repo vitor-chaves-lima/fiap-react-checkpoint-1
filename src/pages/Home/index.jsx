@@ -6,6 +6,7 @@ import InstagramIcon from "../../assets/images/instagram_icon.jpg";
 import Card from "../../components/Card";
 import Hero from "../../components/Hero";
 import "./styles.css";
+import Container from "../../components/Container";
 
 /* =================== SubComponents =================== */
 
@@ -69,10 +70,10 @@ function HomePage() {
 	};
 
 	return (
-		<>
+		<Container>
 			<Hero {...heroContent} />
 			<CardSection />
-		</>
+		</Container>
 	);
 }
 

@@ -1,6 +1,7 @@
 import Hero from "../../components/Hero";
 import AboutHeroImage1 from "../../assets/images/about_hero_image_1.png";
 import AboutHeroImage2 from "../../assets/images/about_hero_image_2.png";
+import Container from "../../components/Container";
 
 /* =================== Main Component ================== */
 
@@ -19,9 +20,9 @@ function AboutPage() {
 	};
 
 	return (
-		<>
+		<Container>
 			<Hero {...heroContent} />
-		</>
+		</Container>
 	);
 }
 
