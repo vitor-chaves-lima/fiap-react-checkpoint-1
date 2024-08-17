@@ -45,7 +45,8 @@ function CardSection() {
 		<section className="card-section">
 			{cardsContent.map((card, index) => (
 				<Card
-					key={index}
+					key={"card-" + index}
+					number={index + 1}
 					backgroundColor={card.backgroundColor}
 					title={card.title}
 					description={card.description}
@@ -64,7 +65,7 @@ function HomePage() {
 		description:
 			"Descubra como produzir vídeos incríveis e cativantes para engajar sua audiência nas principais redes sociais do mundo.",
 		callToAction: "Comece Agora !",
-		heroImageSource: HeroImage,
+		heroElement: <img src={HeroImage} alt="Hero" />,
 	};
 
 	return (

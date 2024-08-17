@@ -7,12 +7,12 @@ const HeroPropType = PropTypes.shape({
 	headline: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
 	callToAction: PropTypes.string.isRequired,
-	heroImageSource: PropTypes.string.isRequired,
+	heroElement: PropTypes.element.isRequired,
 }).isRequired;
 
 /* =================== Main Component ================== */
 
-function Hero({ headline, description, callToAction, heroImageSource }) {
+function Hero({ headline, description, callToAction, heroElement }) {
 	return (
 		<section className="hero-section">
 			<div className="headline">
@@ -21,9 +21,7 @@ function Hero({ headline, description, callToAction, heroImageSource }) {
 				<button className="call-to-action">{callToAction}</button>
 			</div>
 
-			<div>
-				<img className="hero" src={heroImageSource} />
-			</div>
+			{heroElement}
 		</section>
 	);
 }
