@@ -7,7 +7,8 @@ nav {
 
 ul {
 	display: flex;
-	gap: 20px;
+	justify-content: center;
+	gap: 55px;
 	list-style: none;
 }
 
@@ -17,5 +18,9 @@ ul a {
 }
 
 ul a:hover {
+	text-decoration: underline;
+}
+
+ul a.selected {
 	text-decoration: underline;
 }

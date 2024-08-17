@@ -1,19 +1,24 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 
 function BaseLayout() {
+	const location = useLocation();
+
 	const navbarItems = [
 		{
 			label: "Home",
 			href: "/",
+			selected: location.pathname === "/",
 		},
 		{
-			label: "About",
+			label: "Sobre",
 			href: "/about",
+			selected: location.pathname === "/about",
 		},
 		{
-			label: "Contact",
+			label: "Contato",
 			href: "/contact",
+			selected: location.pathname === "/contact",
 		},
 	];
 
