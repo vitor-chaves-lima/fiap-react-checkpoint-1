@@ -1,7 +1,8 @@
-import "./styles.css";
 import PropTypes from "prop-types";
+import "./styles.css";
 
 /* ===================== PropTypes ===================== */
+
 const NavbarItemPropType = PropTypes.shape({
 	label: PropTypes.string.isRequired,
 	href: PropTypes.string.isRequired,
@@ -13,6 +14,7 @@ const NavbarPropType = PropTypes.shape({
 }).isRequired;
 
 /* =================== SubComponents =================== */
+
 function NavbarItem({ label, href, selected }) {
 	let classes = selected ? "selected" : "";
 
@@ -28,6 +30,7 @@ function NavbarItem({ label, href, selected }) {
 NavbarItem.propTypes = NavbarItemPropType;
 
 /* =================== Main Component ================== */
+
 function Navbar({ items }) {
 	return (
 		<nav>
@@ -39,4 +42,5 @@ function Navbar({ items }) {
 Navbar.propTypes = NavbarPropType;
 
 /* ====================== Exports ====================== */
+
 export default Navbar;
