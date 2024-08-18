@@ -1,0 +1,18 @@
+.network {
+    width: 570px;
+    border-right: 2px solid #B9B7B7;
+}
+
+.icones {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 60px;
+}
+
+.network h1{
+    font-size: 60px;
+}
+
+.network img {
+    width: 50px;
+}

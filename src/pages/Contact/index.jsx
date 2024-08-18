@@ -1,7 +1,6 @@
-import TwitterIcon from "../../assets/images/twitter_icon.png";
-import InstagramIcon from "../../assets/images/instagram_icon.png";
-import DiscordIcon from "../../assets/images/discord_icon.png";
+import "./style.css";
 import FormComponent from "../../components/Form";
+import NetworkComponent from "../../components/Network"
 import Container from "../../components/Container";
 
 
@@ -9,11 +8,12 @@ import Container from "../../components/Container";
 function ContactPage (){
     return (
         <Container>
-            
-            <h1>Dúvidas e suporte, entre em contato:</h1>
+            <div className="contact">
+            <NetworkComponent/>
             <FormComponent/>
+            </div>
         </Container>
-        
+       
     )
 }
 

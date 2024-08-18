@@ -1,28 +1,28 @@
-import "./style.css";
+import "./styles.css";
 
-function Form () {
+function ContactForm () {
     return (
-        <section id="contact">
         <form>
-            <div className="input">
-                <p>Nome:</p>
+            <div className="input-wrapper">
+                <label>Nome:</label>
                 <input type="text"/>
             </div>
 
-            <div className="input">
-                <p>E-mail:</p>
+            <div className="input-wrapper">
+                <label>E-mail:</label>
                 <input type="email"/>
             </div>
 
             <div className="area">
-                <p>Mensagem</p>
+                <label>Mensagem:</label>
                 <textarea></textarea>
             </div>
 
-            <button type="submit">Enviar</button>
+            <div class="button-wrapper">
+                <button type="submit">Enviar</button>
+            </div>
         </form>
-        </section>
     )
 }
 
-export default Form
+export default ContactForm
