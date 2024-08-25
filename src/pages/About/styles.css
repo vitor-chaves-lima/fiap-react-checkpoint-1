@@ -13,3 +13,48 @@
 .plans-section h3 {
 	font-size: 1.5rem;
 }
+
+.plans{
+	display: flex;
+	color: #131925;
+	justify-items: center;
+	gap: 15px;
+}
+
+.plans p {
+	color: #8790A3;
+}
+
+.plans img{
+	width: 60%;
+	margin: 50px auto;
+	display: block;
+	justify-self: center;
+}
+
+.plans select{
+	width: 100%;
+	font-family: "RobotoMono";
+	font-weight: 400;
+	padding-left: 2px;
+	height: 35px;
+	border-radius: 15px;
+	outline: none;
+}
+
+.plans select::after{
+	background-color:#6975E8;;
+}
+
+.users{
+	margin: 1rem 0rem 1.5rem 0rem;;
+}
+
+.plans button{
+	width: 225px;
+	height: 35px;
+}
+
+.content-wrapper{
+	height: 220px;
+}

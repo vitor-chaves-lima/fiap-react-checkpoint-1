@@ -4,16 +4,16 @@ function ContactForm () {
     return (
         <form>
             <div className="input-wrapper">
-                <label>Nome:</label>
-                <input type="text"/>
+                <label for='text-name' >Nome:</label>
+                <input type="text" id="text-name"/>
             </div>
 
             <div className="input-wrapper">
-                <label>E-mail:</label>
-                <input type="email"/>
+                <label for='text-email'>E-mail:</label>
+                <input type="email" id="text-email"/>
             </div>
 
-            <div className="area">
+            <div className="textarea-wrapper">
                 <label>Mensagem:</label>
                 <textarea></textarea>
             </div>

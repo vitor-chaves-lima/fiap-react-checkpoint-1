@@ -1,5 +1,4 @@
-import "./style.css";
-import FormComponent from "../../components/Form";
+import FormComponent from "../../components/ContactForm";
 import NetworkComponent from "../../components/Network"
 import Container from "../../components/Container";
 
@@ -8,7 +7,7 @@ import Container from "../../components/Container";
 function ContactPage (){
     return (
         <Container>
-            <div className="contact">
+        <div className="contact" style={{ display: "flex", justifyContent: "center", marginTop:'75px' }}> 
             <NetworkComponent/>
             <FormComponent/>
             </div>
