@@ -2,12 +2,15 @@
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	background-color: #ffffff;
+	width: 240px;
+	height: 390px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .plan-card .title-wrapper {
 	display: flex;
 	justify-content: center;
+
 	padding: 20px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -19,7 +22,7 @@
 }
 
 .plan-card .title-wrapper h3 {
-	font-size: 1.1rem;
+	font-size: 1rem;
 }
 
 .plan-card:hover .title-wrapper h3 {
